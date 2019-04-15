@@ -1,0 +1,30 @@
+@charset "UTF-8";
+@import "variable";
+
+/*
+--------------------------------------------
+Base style
+--------------------------------------------
+2019/04/16
+--------------------------------------------
+*/
+
+@import url(//fonts.googleapis.com/earlyaccess/notosansjp.css);
+//@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+* {
+  font-family: 'Noto Sans JP',
+    "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN",
+    "游ゴシック", YuGothic,
+    "メイリオ", Meiryo,
+    sans-serif;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background: $body-bg;
+  margin: 0;
+  padding:0;
+}
