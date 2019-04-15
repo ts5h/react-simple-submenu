@@ -1,1 +1,1 @@
-A simple submenu for React-based web pages. test
+A simple submenu for React-based web pages.
