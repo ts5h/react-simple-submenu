@@ -58,6 +58,7 @@ Header Style
 
       &.sub {
         position: absolute;
+        display: none;
 
         margin: 0;
         padding: 0;
@@ -66,6 +67,10 @@ Header Style
         top: 68px;
 
         box-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
+
+        &.show {
+          display: block;
+        }
 
         li {
           display: block;
