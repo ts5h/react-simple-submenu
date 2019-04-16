@@ -10,7 +10,7 @@ export default class Header extends React.Component {
     return (
       <div className={Styles.box_header}>
         <header className={`clearfix`}>
-          <h1>Web Site Name</h1>
+          <h1>React Simple Submenu</h1>
           <Submenu />
         </header>
       </div>

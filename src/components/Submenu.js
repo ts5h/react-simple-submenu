@@ -12,7 +12,7 @@ export default class Submenu extends React.Component {
     };
   }
 
-  submenu = flag => {
+  setSubmenu = flag => {
     this.setState(flag);
     // console.log(flag);
   };
@@ -21,8 +21,8 @@ export default class Submenu extends React.Component {
     return (
       <ul className={Styles.main}>
         <li
-          onMouseOver={() => this.submenu({ menu1: true })}
-          onMouseOut={() => this.submenu({ menu1: false })}
+          onMouseOver={() => this.setSubmenu({ menu1: true })}
+          onMouseOut={() => this.setSubmenu({ menu1: false })}
         >
           Menu 1
           <ul
@@ -34,8 +34,8 @@ export default class Submenu extends React.Component {
           </ul>
         </li>
         <li
-          onMouseOver={() => this.submenu({ menu2: true })}
-          onMouseOut={() => this.submenu({ menu2: false })}
+          onMouseOver={() => this.setSubmenu({ menu2: true })}
+          onMouseOut={() => this.setSubmenu({ menu2: false })}
         >
           Menu 2
           <ul
