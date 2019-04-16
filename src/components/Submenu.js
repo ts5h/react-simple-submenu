@@ -15,7 +15,7 @@ export default class Header extends React.Component {
   
   submenu = (flag) => {
     this.setState(flag);
-    console.log(flag);
+    //console.log(flag);
   };
   
   render() {
