@@ -10,10 +10,10 @@
   flex-direction: column;
   min-height: 100vh;
   
-  .box_header {
-    background: #94a5ba;
-  }
+  // Header
+  // see ./Header.scss
 
+  // Contents
   .box_main {
     flex: 1;
 
@@ -52,8 +52,10 @@
     }
   }
 
+  // Footer
   .box_footer {
     background: $footer-bg;
+    color: #fff;
 
     footer {
       width: 1000px;
