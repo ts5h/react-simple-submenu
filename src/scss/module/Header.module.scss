@@ -19,12 +19,11 @@ Header Style
 
     width: 1000px;
     margin: 0 auto;
-    padding: 20px;
 
     h1 {
       justify-content: start;
       margin: 0;
-      padding: 0;
+      padding: 20px;
       font-size: 28px;
     }
 
@@ -32,24 +31,56 @@ Header Style
       margin: 0;
       padding: 0;
       list-style: none;
+      
+      li {
+        cursor: pointer;
+      }
 
       &.main {
+        display: flex;
+        align-self: stretch;
+
         margin-left: auto;
-        position: relative;
 
         > li {
-          display: inline-block;
-          margin-right: 50px;
+          position: relative;
+          display: inline-flex;
+          align-items: center;
 
-          &:last-child {
-            margin-right: 0;
+          padding: 20px;
+
+          &:hover {
+            background: #fff;
+            color: $header-bg;
           }
         }
       }
 
       &.sub {
         position: absolute;
-        display: none;
+
+        margin: 0;
+        padding: 0;
+
+        left: 0;
+        top: 68px;
+
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
+
+        li {
+          display: block;
+
+          background: $header-bg;
+          color: #fff;
+
+          padding: 20px;
+          width: 200px;
+
+          &:hover {
+            background: #fff;
+            color: $header-bg;
+          }
+        }
       }
     }
   }
