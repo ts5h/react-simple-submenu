@@ -9,22 +9,36 @@ Base style
 --------------------------------------------
 */
 
-@import url(//fonts.googleapis.com/earlyaccess/notosansjp.css);
-//@import url('https://fonts.googleapis.com/css?family=Roboto');
-
 * {
-  font-family: 'Noto Sans JP',
-    "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN",
-    "游ゴシック", YuGothic,
-    "メイリオ", Meiryo,
+  font-family:
+    "Helvetica Neue", Arial,
+    'Hiragino Kaku Gothic Pro', Meiryo,
     sans-serif;
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  box-sizing: border-box;
+  line-height: 100%;
 }
 
 body {
   background: $body-bg;
   margin: 0;
-  padding:0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+// Clearfix
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
 }
