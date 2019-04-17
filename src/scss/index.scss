@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import "variable";
+@import "./variable";
 
 /*
 --------------------------------------------
@@ -10,10 +10,7 @@ Base style
 */
 
 * {
-  font-family:
-    "Helvetica Neue", Arial,
-    'Hiragino Kaku Gothic Pro', Meiryo,
-    sans-serif;
+  font-family: "Helvetica Neue", Arial, 'Hiragino Kaku Gothic Pro', Meiryo, sans-serif;
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -34,8 +31,6 @@ p {
   margin: 0;
   padding: 0;
 }
-
-
 
 
 // Clearfix
