@@ -31,7 +31,7 @@ Header Style
       margin: 0;
       padding: 0;
       list-style: none;
-      
+
       li {
         cursor: pointer;
       }
@@ -64,7 +64,8 @@ Header Style
         padding: 0;
 
         left: 0;
-        top: 68px;
+        top: 0;
+        z-index: 10;
 
         box-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
 

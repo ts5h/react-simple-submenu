@@ -19,15 +19,18 @@ export default class Submenu extends Component {
     
     // Set ul.sub position
     this.setSubmenuPosition = () => {
-      //console.log(this.menuMain.clientHeight);
       let subMenuArray = document.getElementsByClassName('sub');
-      
+      for (let i = 0; i < subMenuArray.length; i++) {
+        subMenuArray[i].style.left = 0;
+        subMenuArray[i].style.top = this.menuMain.clientHeight + 'px';
+      }
     };
     
     // ul.sub show / hide
     this.showSubmenu = (flag) => {
       this.setState(flag);
     };
+    
   }
   
   componentDidMount() {
