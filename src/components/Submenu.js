@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import Styles from "../scss/module/Header.module.scss";
+import React, { Component } from 'react';
+import Styles from '../scss/modules/Header.module.scss';
 
 // Submenu
 export default class Submenu extends Component {
@@ -8,36 +8,52 @@ export default class Submenu extends Component {
     
     this.state = {
       menu1: false,
-      menu2: false
+      menu2: false,
     };
     
-    //let menuHeight = null;
-    this.menuHeight = null;
+    // ul.main
+    this.menuMain = null;
+    this.setMenuMain = el => {
+      this.menuMain = el;
+    };
+    
+    // Set ul.sub position
+    this.setSubmenuPosition = () => {
+      //console.log(this.menuMain.clientHeight);
+      let subMenuArray = document.getElementsByClassName('sub');
+      
+    };
+    
+    // ul.sub show / hide
+    this.showSubmenu = (flag) => {
+      this.setState(flag);
+    };
   }
   
   componentDidMount() {
-  
+    this.setSubmenuPosition();
   }
   
   render() {
     return (
       <ul
+        ref={this.setMenuMain}
         className={Styles.main}>
         <li
-          onMouseOver={() => this.setSubmenu({ menu1: true })}
-          onMouseOut={() => this.setSubmenu({ menu1: false })}
+          onMouseOver={() => this.showSubmenu({ menu1: true })}
+          onMouseOut={() => this.showSubmenu({ menu1: false })}
         >Menu 1
-          <ul className={`${Styles.sub} ${this.state.menu1 ? Styles.show : ""}`}>
+          <ul className={`${Styles.sub} ${this.state.menu1 ? Styles.show : ''} sub`}>
             <li>Submenu 1</li>
             <li>Submenu 2</li>
             <li>Submenu 3</li>
           </ul>
         </li>
         <li
-          onMouseOver={() => this.setSubmenu({ menu2: true })}
-          onMouseOut={() => this.setSubmenu({ menu2: false })}
+          onMouseOver={() => this.showSubmenu({ menu2: true })}
+          onMouseOut={() => this.showSubmenu({ menu2: false })}
         >Menu 2
-          <ul className={`${Styles.sub} ${this.state.menu2 ? Styles.show : ""}`}>
+          <ul className={`${Styles.sub} ${this.state.menu2 ? Styles.show : ''} sub`}>
             <li>Submenu 4</li>
             <li>Submenu 5</li>
             <li>Submenu 6</li>
@@ -50,10 +66,4 @@ export default class Submenu extends Component {
       </ul>
     );
   }
-  
-  // Handlers
-  setSubmenu = flag => {
-    this.setState(flag);
-    // console.log(flag);
-  };
 }

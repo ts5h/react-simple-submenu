@@ -1,8 +1,8 @@
-import React, { Component } from "react";
-import Styles from "../scss/module/Header.module.scss";
+import React, { Component } from 'react';
+import Styles from '../scss/modules/Header.module.scss';
 
 // Component
-import Submenu from "./Submenu";
+import Submenu from './Submenu';
 
 
 // Header

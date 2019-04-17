@@ -1,10 +1,10 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 
-import "./scss/App.scss";
+import './scss/App.scss';
 
 // Components
 //import Header from "./components/Header";
-import Header from "./components/Header";
+import Header from './components/Header';
 
 class App extends Component {
   render() {
