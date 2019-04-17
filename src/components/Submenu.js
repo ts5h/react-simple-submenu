@@ -27,10 +27,15 @@ export default class Submenu extends Component {
     };
     
     // ul.sub show / hide
+    this.timerID = null;
+    this.currentMenu = null;
     this.showSubmenu = (flag) => {
       this.setState(flag);
     };
     
+    this.hideSubmenu = () => {
+    
+    };
   }
   
   componentDidMount() {
