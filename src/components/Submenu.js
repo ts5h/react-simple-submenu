@@ -10,16 +10,19 @@ export default class Submenu extends Component {
       menu1: false,
       menu2: false
     };
+    
+    //let menuHeight = null;
+    this.menuHeight = null;
   }
   
-  setSubmenu = flag => {
-    this.setState(flag);
-    // console.log(flag);
-  };
+  componentDidMount() {
+  
+  }
   
   render() {
     return (
-      <ul className={Styles.main}>
+      <ul
+        className={Styles.main}>
         <li
           onMouseOver={() => this.setSubmenu({ menu1: true })}
           onMouseOut={() => this.setSubmenu({ menu1: false })}
@@ -47,4 +50,10 @@ export default class Submenu extends Component {
       </ul>
     );
   }
+  
+  // Handlers
+  setSubmenu = flag => {
+    this.setState(flag);
+    // console.log(flag);
+  };
 }
