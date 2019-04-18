@@ -22,6 +22,7 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
+# ts5h
 # React Simple Submenu
 /backup
 yarn.lock
