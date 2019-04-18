@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 
+// Sass
 import './scss/App.scss';
+
 
 // Components
 //import Header from "./components/Header";

@@ -29,7 +29,7 @@ export default class Submenu extends Component {
     };
     
     // ul.sub show / hide
-    this.showSubmenu = (flag) => {
+    this.showMenuSub = flag => {
       this.setState(flag);
     };
   }
@@ -44,8 +44,8 @@ export default class Submenu extends Component {
         ref={this.setMenuMain}
         className={Styles.main}>
         <li
-          onMouseOver={() => this.showSubmenu({ menu1: true })}
-          onMouseOut={() => this.showSubmenu({ menu1: false })}
+          onMouseOver={() => this.showMenuSub({ menu1: true })}
+          onMouseOut={() => this.showMenuSub({ menu1: false })}
         >Menu 1
           <ul className={`${Styles.sub} ${this.state.menu1 ? Styles.show : ''} sub`}>
             <li>Submenu 1</li>
@@ -54,8 +54,8 @@ export default class Submenu extends Component {
           </ul>
         </li>
         <li
-          onMouseOver={() => this.showSubmenu({ menu2: true })}
-          onMouseOut={() => this.showSubmenu({ menu2: false })}
+          onMouseOver={() => this.showMenuSub({ menu2: true })}
+          onMouseOut={() => this.showMenuSub({ menu2: false })}
         >Menu 2
           <ul className={`${Styles.sub} ${this.state.menu2 ? Styles.show : ''} sub`}>
             <li>Submenu 4</li>
