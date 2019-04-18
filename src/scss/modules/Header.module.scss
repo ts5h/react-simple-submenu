@@ -1,5 +1,6 @@
 @charset "UTF-8";
-@import "../variable";
+@import "../config/variable";
+@import "../config/mixin";
 
 /*
 --------------------------------------------
@@ -11,7 +12,7 @@ Header Style
 
 .box_header {
   background: $header-bg;
-  color: #fff;
+  color: $header-txt;
 
   header {
     display: flex;
@@ -52,7 +53,7 @@ Header Style
           transition: .3s linear;
 
           &:hover {
-            background: #fff;
+            background: $header-txt;
             color: $header-bg;
           }
         }
@@ -71,7 +72,9 @@ Header Style
 
         box-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
 
-        transition: all .3s linear;
+        // Menu effects
+        @include transition(.3s);
+
         visibility: hidden;
         opacity: 0;
         max-height: 0;
@@ -89,13 +92,13 @@ Header Style
           display: block;
 
           background: $header-bg;
-          color: #fff;
+          color: $header-txt;
 
           padding: 20px;
           width: 200px;
 
           &:hover {
-            background: #fff;
+            background: $header-txt;
             color: $header-bg;
           }
         }
