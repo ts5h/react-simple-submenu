@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Styles from '../scss/modules/Header.module.scss';
 
+
 // Submenu
 export default class Submenu extends Component {
   constructor(props) {
@@ -19,7 +20,7 @@ export default class Submenu extends Component {
     
     // Set ul.sub position
     
-    this.setSubmenuPosition = () => {
+    this.setSubmenu = () => {
       let submenuArray = document.getElementsByClassName('sub');
       for (let i = 0; i < submenuArray.length; i++) {
         submenuArray[i].style.left = 0;
@@ -34,7 +35,7 @@ export default class Submenu extends Component {
   }
   
   componentDidMount() {
-    this.setSubmenuPosition();
+    this.setSubmenu();
   }
   
   render() {
@@ -46,7 +47,7 @@ export default class Submenu extends Component {
           onMouseOver={() => this.showSubmenu({ menu1: true })}
           onMouseOut={() => this.showSubmenu({ menu1: false })}
         >Menu 1
-          <ul className={`${Styles.sub} ${this.state.menu1 ? Styles.show : Styles.hide} sub`}>
+          <ul className={`${Styles.sub} ${this.state.menu1 ? Styles.show : ''} sub`}>
             <li>Submenu 1</li>
             <li>Submenu 2</li>
             <li>Submenu 3</li>
@@ -56,7 +57,7 @@ export default class Submenu extends Component {
           onMouseOver={() => this.showSubmenu({ menu2: true })}
           onMouseOut={() => this.showSubmenu({ menu2: false })}
         >Menu 2
-          <ul className={`${Styles.sub} ${this.state.menu2 ? Styles.show : Styles.hide} sub`}>
+          <ul className={`${Styles.sub} ${this.state.menu2 ? Styles.show : ''} sub`}>
             <li>Submenu 4</li>
             <li>Submenu 5</li>
             <li>Submenu 6</li>

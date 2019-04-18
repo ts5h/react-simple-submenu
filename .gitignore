@@ -24,3 +24,4 @@ yarn-error.log*
 
 # React Simple Submenu
 /backup
+yarn.lock

@@ -49,6 +49,8 @@ Header Style
 
           padding: 20px;
 
+          transition: .3s linear;
+
           &:hover {
             background: #fff;
             color: $header-bg;
@@ -58,7 +60,7 @@ Header Style
 
       &.sub {
         position: absolute;
-        display: none;
+        //display: none;
 
         margin: 0;
         padding: 0;
@@ -69,8 +71,18 @@ Header Style
 
         box-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
 
+        transition: all .3s linear;
+        visibility: hidden;
+        opacity: 0;
+        max-height: 0;
+        overflow: hidden;
+
         &.show {
-          display: block;
+          visibility: visible;
+          opacity: 1;
+
+          // Change height according to the number of menu
+          max-height: 300px;
         }
 
         li {
