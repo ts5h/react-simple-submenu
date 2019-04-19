@@ -1,12 +1,12 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
 // Sass
-import './scss/App.scss';
+import "./scss/App.scss";
 
 
 // Components
 //import Header from "./components/Header";
-import Header from './components/Header';
+import Header from "./components/Header";
 
 class App extends Component {
   render() {
@@ -51,7 +51,7 @@ class App extends Component {
         </div>
         
         {/* Footer */}
-        <div className={`box_footer`}>
+        <div className={`box_footer clearfix`}>
           <footer>
             <p className={`copyright`}>&copy; Copyright</p>
           </footer>

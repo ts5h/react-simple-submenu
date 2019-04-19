@@ -13,6 +13,7 @@ Header Style
 .box_header {
   background: $header-bg;
   color: $header-txt;
+  min-width: 1000px;
 
   header {
     display: flex;
@@ -100,6 +101,53 @@ Header Style
           &:hover {
             background: $header-txt;
             color: $header-bg;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+// Tablet, Smartphone
+@media screen and (max-width: $max-width) {
+  .box_header {
+    min-width: auto;
+
+    header {
+      display: initial;
+      width: auto;
+
+      h1 {
+        border-bottom: 1px solid $body-bg;
+        font-size: 24px;
+        text-align: center;
+      }
+
+      ul {
+        font-size: 14px;
+
+        &.main {
+          display: block;
+
+          > li {
+            display: inline-block;
+            width: 50%;
+
+            border-right: 1px solid $body-bg;
+            border-bottom: 1px solid $body-bg;
+
+            &:nth-child(2n) {
+              border-right: none;
+            }
+          }
+        }
+
+        &.sub {
+          width: 100%;
+
+          > li {
+            width: auto;
           }
         }
       }
