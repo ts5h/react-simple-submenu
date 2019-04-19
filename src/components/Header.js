@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
-import Styles from '../scss/modules/Header.module.scss';
+import React, { Component } from "react";
+import Styles from "../scss/modules/Header.module.scss";
 
 // Component
-import Submenu from './Submenu';
+import Submenu from "./Submenu";
 
 
 // Header
@@ -11,7 +11,7 @@ export default class Header extends Component {
     return (
       <div className={Styles.box_header}>
         <header className={`clearfix`}>
-          <h1>React Simple Submenu</h1>
+          <h1><a href="#">React Simple Submenu</a></h1>
           <Submenu/>
         </header>
       </div>

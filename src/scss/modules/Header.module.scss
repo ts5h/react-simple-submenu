@@ -27,6 +27,11 @@ Header Style
       margin: 0;
       padding: 20px;
       font-size: 28px;
+
+      a {
+        color: $body-bg;
+        text-decoration: none;
+      }
     }
 
     ul {
