@@ -2,7 +2,7 @@
 A single level submenu with CSS3 for React-based web pages.  
 Live demo: https://ts5h.github.io/react-simple-submenu/
 
-## Verified Browser
+## Browser Support
 - [x] Chrome (latest)  
 - [x] Firefox (latest)  
 - [x] Safari & Mobile Safari (latest)  
@@ -23,4 +23,4 @@ See ```package.json```
 
 ## License
 [WTFPL license](http://www.wtfpl.net/txt/copying/)  
-Please refactor code better than these and make your own as you like.
+Please refactor code better than it and make your own as you like.
