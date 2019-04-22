@@ -13,8 +13,8 @@ Enzyme.configure({ adapter: new Adapter() });
 /* test */
 
 // Check exists Submenu component
-describe('view', () => {
-  test('Exists Submenu', () => {
+describe('Header', () => {
+  test('Exists Submenu module', () => {
     const wrapper = shallow(<Header/>);
     
     expect(wrapper.find('Submenu').length).toBe(1);
