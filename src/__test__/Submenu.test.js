@@ -14,20 +14,20 @@ Enzyme.configure({ adapter: new Adapter() });
 describe('Submenu', () => {
   
   const component = mount(<Submenu/>);
-  const spy = jest.spyOn(component.instance(), 'setSubmenu');
+  const setSubmenu = jest.spyOn(component.instance(), 'setSubmenu');
   
   
   // called setSubmenu
   test('Should call setSubmenu() on componentDidMount', () => {
     component.instance().componentDidMount();
-    expect(spy).toHaveBeenCalled();
+    expect(setSubmenu).toHaveBeenCalled();
   });
   
   test('Should call setSubmenu() on window resize event', () => {
-    window.addEventListener('resize', spy);
+    window.addEventListener('resize', setSubmenu);
     window.dispatchEvent(new Event('resize'));
     
-    expect(spy).toHaveBeenCalled();
+    expect(setSubmenu).toHaveBeenCalled();
   });
   
   
