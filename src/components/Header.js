@@ -12,7 +12,7 @@ export default class Header extends Component {
       <div className={Styles.box_header}>
         <header className={`clearfix`}>
           <h1>
-            <a href="/">React Simple Submenu</a>
+            <a href={process.env.PUBLIC_URL}>React Simple Submenu</a>
           </h1>
           <Submenu/>
         </header>
