@@ -10,7 +10,6 @@ Live demo: https://ts5h.github.io/react-simple-submenu/
 - [x] Safari & Mobile Safari (latest)  
 - [x] Edge (latest)
 
-
 ## Getting Started
 
 ### Installation
