@@ -11,7 +11,7 @@ export default class Header extends Component {
     return (
       <div className={Styles.box_header}>
         <header className={`clearfix`}>
-          <h1><a href="#">React Simple Submenu</a></h1>
+          <h1><a href="/">React Simple Submenu</a></h1>
           <Submenu/>
         </header>
       </div>
