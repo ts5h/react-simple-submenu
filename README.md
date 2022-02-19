@@ -1,4 +1,6 @@
 # React Simple Submenu
+Notice: This module is written in the old React style. 
+ 
 A single level submenu with CSS3 for React-based web pages.  
 Live demo: https://ts5h.github.io/react-simple-submenu/
 
