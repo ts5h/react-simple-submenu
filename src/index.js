@@ -4,7 +4,6 @@ import ReactDOM from 'react-dom';
 // Sass
 import './scss/index.scss';
 
-
 // Components
 import App from './App';
 import * as serviceWorker from './serviceWorker';
